@@ -22,7 +22,7 @@ const Navigation = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       {/* Utility Bar */}
       <div className="border-b border-border/50">
-        <div className="container mx-auto px-4 py-2 flex items-center justify-center text-sm">
+        <div className="container mx-auto px-4 py-2 flex items-center justify-between text-sm">
           <div className="flex items-center gap-6">
             <a href="tel:9257369494" className="flex items-center gap-2 text-muted hover:text-foreground transition-smooth">
               <Phone className="h-4 w-4" />
@@ -37,6 +37,8 @@ const Navigation = () => {
               <MapPin className="h-4 w-4" />
               <span className="hidden md:inline">Danville, CA</span>
             </a>
+          </div>
+          <div className="flex items-center gap-2">
             <Button variant="ghost" size="icon" className="h-8 w-8">
               <Search className="h-4 w-4" />
             </Button>
@@ -49,8 +51,8 @@ const Navigation = () => {
 
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-display font-semibold tracking-tight">
+        <div className="flex items-center justify-center h-16 relative">
+          <Link to="/" className="absolute left-4 text-2xl font-display font-semibold tracking-tight">
             Cattails Florist
           </Link>
           
@@ -72,7 +74,7 @@ const Navigation = () => {
           </nav>
 
           {/* Mobile menu button - simplified for now */}
-          <Button variant="ghost" size="icon" className="lg:hidden">
+          <Button variant="ghost" size="icon" className="lg:hidden absolute right-4">
             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
