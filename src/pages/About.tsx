@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail } from "lucide-react";
+import Reviews from "@/components/Reviews";
 
 const About = () => {
   const deliveryAreas = [
@@ -115,6 +116,9 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Reviews */}
+      <Reviews />
 
       {/* Contact Info */}
       <section className="container mx-auto px-4 py-20">
