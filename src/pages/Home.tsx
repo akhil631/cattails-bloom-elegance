@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Truck, Award, Calendar, Star } from "lucide-react";
+import Reviews from "@/components/Reviews";
 import heroBanner from "@/assets/hero-banner.jpg";
 import productRoses from "@/assets/product-roses.jpg";
 import productTulips from "@/assets/product-tulips.jpg";
@@ -159,6 +160,17 @@ const Home = () => {
             <p className="text-3xl font-display font-semibold mb-1">Same Day</p>
             <p className="text-muted-foreground">Local Delivery</p>
           </div>
+        </div>
+      </section>
+
+      {/* Customer Reviews */}
+      <section className="bg-surface py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-display font-semibold mb-4">What Our Customers Say</h2>
+            <p className="text-lg text-muted-foreground">Real reviews from real customers</p>
+          </div>
+          <Reviews />
         </div>
       </section>
     </div>
