@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Weddings from "./pages/Weddings";
-import Subscriptions from "./pages/Subscriptions";
+
 import CustomOrder from "./pages/CustomOrder";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -27,7 +27,7 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/weddings" element={<Weddings />} />
-          <Route path="/subscriptions" element={<Subscriptions />} />
+          
           <Route path="/custom-order" element={<CustomOrder />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
